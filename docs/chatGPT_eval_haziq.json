@@ -1,0 +1,148 @@
+{
+    "input": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant who specialises in analysing marketing related data who specialises in analysing marketing related data."
+        },
+        {
+            "role": "user",
+            "content": "November media spend is $2,077,768.44. is that above or below 2million?"
+        }
+    ],
+    "ideal": "Above"
+}
+{
+    "input": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant who specialises in analysing marketing related data."
+        },
+        {
+            "role": "user",
+            "content": "Write a headline that tells the reader how many months spent more than 2 million and order the months in ascending order of media spend.\n{\"view_type\":\"table\",\"dimensions\":[{\"key\":\"iso_month\",\"label\":\"Month ISO\"}],\"data\":{\"rest\":null,\"rows\":[{\"compare\":null,\"current\":{\"spend\":\"$3,244,911.90\",\"clicks\":\"831,783\",\"impressions\":\"154,407,300\",\"iso_month\":\"2019-12\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,077,768.44\",\"clicks\":\"363,164\",\"impressions\":\"126,672,607\",\"iso_month\":\"2019-11\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,221,534.06\",\"clicks\":\"548,193\",\"impressions\":\"142,640,793\",\"iso_month\":\"2019-10\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,495,964.06\",\"clicks\":\"589,582\",\"impressions\":\"144,811,303\",\"iso_month\":\"2019-09\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,121,149.51\",\"clicks\":\"321,974\",\"impressions\":\"171,800,538\",\"iso_month\":\"2019-08\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,922,214.27\",\"clicks\":\"450,934\",\"impressions\":\"99,942,055\",\"iso_month\":\"2019-07\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,481,887.54\",\"clicks\":\"255,999\",\"impressions\":\"69,531,825\",\"iso_month\":\"2019-06\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,699,436.51\",\"clicks\":\"553,619\",\"impressions\":\"115,302,052\",\"iso_month\":\"2019-05\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,610,082.12\",\"clicks\":\"431,500\",\"impressions\":\"184,028,531\",\"iso_month\":\"2019-04\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,292,529.94\",\"clicks\":\"676,356\",\"impressions\":\"191,301,367\",\"iso_month\":\"2019-03\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,865,279.68\",\"clicks\":\"292,413\",\"impressions\":\"100,584,969\",\"iso_month\":\"2019-02\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,350,773.89\",\"clicks\":\"544,683\",\"impressions\":\"124,445,905\",\"iso_month\":\"2019-01\"}}],\"totals\":{\"compare\":null,\"current\":{\"spend\":\"$29,383,531.92\",\"clicks\":\"5,860,200\",\"impressions\":\"1,625,469,245\"}}},\"metrics\":[{\"key\":\"spend\",\"label\":\"Media Spend\",\"format\":\"currency\",\"money\":true,\"neutral\":true,\"type\":\"volume\"},{\"key\":\"clicks\",\"label\":\"Clicks\",\"format\":\"integer\",\"type\":\"volume\"},{\"key\":\"impressions\",\"label\":\"Impressions\",\"format\":\"integer\",\"type\":\"volume\"}],\"query\":{\"currentDateRange\":{\"start\":\"2019-01-01\",\"end\":\"2019-12-31\"},\"compareDateRange\":null,\"sortBy\":{\"key\":\"iso_month\",\"order\":-1,\"type\":\"current\"},\"limit\":{\"count\":100,\"withRest\":true}},\"currency\":\"USD\",\"time_zone\":\"Singapore\"}"
+        }
+    ],
+    "ideal": "Headline:
+
+    10 months spent more than $2 million in media spend in 2019, ordered by ascending media spend.
+    
+    Months spent more than $2 million (in ascending order):
+    
+    February: $1,865,279.68
+    July: $1,922,214.27
+    November: $2,077,768.44
+    August: $2,121,149.51
+    October: $2,221,534.06
+    March: $2,292,529.94
+    January: $2,350,773.89
+    June: $2,481,887.54
+    September: $2,495,964.06
+    April: $2,610,082.12
+    December: $3,244,911.90
+    May: $3,699,436.51
+    "
+}
+{
+    "input": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant who specialises in analysing marketing related data."
+        },
+        {
+            "role": "user",
+            "content": "Given the data below, order the months in ascending order of Media Spend, pls show the data in the following order:
+            [Month] - [Media Spend]
+            [Month] - [Media Spend]
+            [Month] - [Media Spend]
+            
+            \n{\"view_type\":\"table\",\"dimensions\":[{\"key\":\"iso_month\",\"label\":\"Month ISO\"}],\"data\":{\"rest\":null,\"rows\":[{\"compare\":null,\"current\":{\"spend\":\"$3,244,911.90\",\"clicks\":\"831,783\",\"impressions\":\"154,407,300\",\"iso_month\":\"2019-12\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,077,768.44\",\"clicks\":\"363,164\",\"impressions\":\"126,672,607\",\"iso_month\":\"2019-11\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,221,534.06\",\"clicks\":\"548,193\",\"impressions\":\"142,640,793\",\"iso_month\":\"2019-10\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,495,964.06\",\"clicks\":\"589,582\",\"impressions\":\"144,811,303\",\"iso_month\":\"2019-09\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,121,149.51\",\"clicks\":\"321,974\",\"impressions\":\"171,800,538\",\"iso_month\":\"2019-08\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,922,214.27\",\"clicks\":\"450,934\",\"impressions\":\"99,942,055\",\"iso_month\":\"2019-07\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,481,887.54\",\"clicks\":\"255,999\",\"impressions\":\"69,531,825\",\"iso_month\":\"2019-06\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,699,436.51\",\"clicks\":\"553,619\",\"impressions\":\"115,302,052\",\"iso_month\":\"2019-05\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,610,082.12\",\"clicks\":\"431,500\",\"impressions\":\"184,028,531\",\"iso_month\":\"2019-04\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,292,529.94\",\"clicks\":\"676,356\",\"impressions\":\"191,301,367\",\"iso_month\":\"2019-03\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,865,279.68\",\"clicks\":\"292,413\",\"impressions\":\"100,584,969\",\"iso_month\":\"2019-02\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,350,773.89\",\"clicks\":\"544,683\",\"impressions\":\"124,445,905\",\"iso_month\":\"2019-01\"}}],\"totals\":{\"compare\":null,\"current\":{\"spend\":\"$29,383,531.92\",\"clicks\":\"5,860,200\",\"impressions\":\"1,625,469,245\"}}},\"metrics\":[{\"key\":\"spend\",\"label\":\"Media Spend\",\"format\":\"currency\",\"money\":true,\"neutral\":true,\"type\":\"volume\"},{\"key\":\"clicks\",\"label\":\"Clicks\",\"format\":\"integer\",\"type\":\"volume\"},{\"key\":\"impressions\",\"label\":\"Impressions\",\"format\":\"integer\",\"type\":\"volume\"}],\"query\":{\"currentDateRange\":{\"start\":\"2019-01-01\",\"end\":\"2019-12-31\"},\"compareDateRange\":null,\"sortBy\":{\"key\":\"iso_month\",\"order\":-1,\"type\":\"current\"},\"limit\":{\"count\":100,\"withRest\":true}},\"currency\":\"USD\",\"time_zone\":\"Singapore\"}"
+        }
+    ],
+    "ideal": "Sure, here is the data sorted in ascending order of Media Spend:
+
+    February 2019 - $1,865,279.68
+    July 2019 - $1,922,214.27
+    November 2019 - $2,077,768.44
+    August 2019 - $2,121,149.51
+    October 2019 - $2,221,534.06
+    March 2019 - $2,292,529.94
+    January 2019 - $2,350,773.89
+    June 2019 - $2,481,887.54
+    September 2019 - $2,495,964.06
+    April 2019 - $2,610,082.12
+    December 2019 - $3,244,911.90
+    May 2019 - $3,699,436.51  
+    "
+}
+{
+    "input": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant who specialises in analysing marketing related data."
+        },
+        {
+            "role": "user",
+            "content": "what is the best performing month? my goal is to maximise impressions\n{\"view_type\":\"table\",\"dimensions\":[{\"key\":\"iso_month\",\"label\":\"Month ISO\"}],\"data\":{\"rest\":null,\"rows\":[{\"compare\":null,\"current\":{\"spend\":\"$3,244,911.90\",\"clicks\":\"831,783\",\"impressions\":\"154,407,300\",\"ctr\":\"0.54%\",\"iso_month\":\"2019-12\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,077,768.44\",\"clicks\":\"363,164\",\"impressions\":\"126,672,607\",\"ctr\":\"0.29%\",\"iso_month\":\"2019-11\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,221,534.06\",\"clicks\":\"548,193\",\"impressions\":\"142,640,793\",\"ctr\":\"0.38%\",\"iso_month\":\"2019-10\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,495,964.06\",\"clicks\":\"589,582\",\"impressions\":\"144,811,303\",\"ctr\":\"0.41%\",\"iso_month\":\"2019-09\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,121,149.51\",\"clicks\":\"321,974\",\"impressions\":\"171,800,538\",\"ctr\":\"0.19%\",\"iso_month\":\"2019-08\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,922,214.27\",\"clicks\":\"450,934\",\"impressions\":\"99,942,055\",\"ctr\":\"0.45%\",\"iso_month\":\"2019-07\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,481,887.54\",\"clicks\":\"255,999\",\"impressions\":\"69,531,825\",\"ctr\":\"0.37%\",\"iso_month\":\"2019-06\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,699,436.51\",\"clicks\":\"553,619\",\"impressions\":\"115,302,052\",\"ctr\":\"0.48%\",\"iso_month\":\"2019-05\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,610,082.12\",\"clicks\":\"431,500\",\"impressions\":\"184,028,531\",\"ctr\":\"0.23%\",\"iso_month\":\"2019-04\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,292,529.94\",\"clicks\":\"676,356\",\"impressions\":\"191,301,367\",\"ctr\":\"0.35%\",\"iso_month\":\"2019-03\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,865,279.68\",\"clicks\":\"292,413\",\"impressions\":\"100,584,969\",\"ctr\":\"0.29%\",\"iso_month\":\"2019-02\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,350,773.89\",\"clicks\":\"544,683\",\"impressions\":\"124,445,905\",\"ctr\":\"0.44%\",\"iso_month\":\"2019-01\"}}],\"totals\":{\"compare\":null,\"current\":{\"spend\":\"$29,383,531.92\",\"clicks\":\"5,860,200\",\"impressions\":\"1,625,469,245\",\"ctr\":\"0.36%\"}}},\"metrics\":[{\"key\":\"spend\",\"label\":\"Media Spend\",\"format\":\"currency\",\"money\":true,\"neutral\":true,\"type\":\"volume\"},{\"key\":\"clicks\",\"label\":\"Clicks\",\"format\":\"integer\",\"type\":\"volume\"},{\"key\":\"impressions\",\"label\":\"Impressions\",\"format\":\"integer\",\"type\":\"volume\"},{\"key\":\"ctr\",\"label\":\"CTR\",\"format\":\"percent_2_digit\",\"type\":\"maximisation\"}],\"query\":{\"currentDateRange\":{\"start\":\"2019-01-01\",\"end\":\"2019-12-31\"},\"compareDateRange\":null,\"sortBy\":{\"key\":\"iso_month\",\"order\":-1,\"type\":\"current\"},\"limit\":{\"count\":100,\"withRest\":true}},\"currency\":\"USD\",\"time_zone\":\"Singapore\"}"
+        }
+    ],
+    "ideal": "March 2019: 191,301,367"
+}
+{
+    "input": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant who specialises in analysing marketing related data."
+        },
+        {
+            "role": "user",
+            "content": "Order the months in ascending order of spend, then in ascending order of clicks. show the spend and clicks with the month\n\n{\"view_type\":\"table\",\"dimensions\":[{\"key\":\"iso_month\",\"label\":\"Month ISO\"}],\"data\":{\"rest\":null,\"rows\":[{\"compare\":null,\"current\":{\"spend\":\"$404,781.05\",\"iso_month\":\"2020-01\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,244,911.90\",\"iso_month\":\"2019-12\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,077,768.44\",\"iso_month\":\"2019-11\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,221,534.06\",\"iso_month\":\"2019-10\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,495,964.06\",\"iso_month\":\"2019-09\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,121,149.51\",\"iso_month\":\"2019-08\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,922,214.27\",\"iso_month\":\"2019-07\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,481,887.54\",\"iso_month\":\"2019-06\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,699,436.51\",\"iso_month\":\"2019-05\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,610,082.12\",\"iso_month\":\"2019-04\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,292,529.94\",\"iso_month\":\"2019-03\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,865,279.68\",\"iso_month\":\"2019-02\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,350,773.89\",\"iso_month\":\"2019-01\"}}],\"totals\":{\"compare\":null,\"current\":{\"spend\":\"$29,788,312.97\"}}},\"metrics\":[{\"key\":\"spend\",\"label\":\"Media Spend\",\"format\":\"currency\",\"money\":true,\"neutral\":true,\"type\":\"volume\"}],\"query\":{\"currentDateRange\":{\"start\":\"2019-01-01\",\"end\":\"2020-03-31\"},\"compareDateRange\":null,\"sortBy\":{\"key\":\"iso_month\",\"order\":-1,\"type\":\"current\"},\"limit\":{\"count\":100,\"withRest\":true}},\"currency\":\"USD\",\"time_zone\":\"Singapore\"            "
+        }
+    ],
+    "ideal": "I apologize, but it seems there's a misunderstanding. The provided data contains only the "spend" metric, while the "clicks" metric is missing. I can certainly help order the months in ascending order of spend, but without the "clicks" data, I won't be able to complete the second part of your request.
+
+    Here are the months in ascending order of spend:
+    
+    January 2020: $404,781.05
+    February 2019: $1,865,279.68
+    July 2019: $1,922,214.27
+    November 2019: $2,077,768.44
+    August 2019: $2,121,149.51
+    October 2019: $2,221,534.06
+    March 2019: $2,292,529.94
+    January 2019: $2,350,773.89
+    June 2019: $2,481,887.54
+    September 2019: $2,495,964.06
+    April 2019: $2,610,082.12
+    December 2019: $3,244,911.90
+    May 2019: $3,699,436.51
+    If you could provide the "clicks" data, I would be glad to help further.
+    "
+}
+
+{
+    "input": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant who specialises in analysing marketing related data."
+        },
+        {
+            "role": "user",
+            "content": "Order the months in descending order of spend, with the value next to the month. \n{\"view_type\":\"table\",\"dimensions\":[{\"key\":\"iso_month\",\"label\":\"Month ISO\"}],\"data\":{\"rest\":null,\"rows\":[{\"compare\":null,\"current\":{\"spend\":\"$404,781.05\",\"iso_month\":\"2020-01\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,244,911.90\",\"iso_month\":\"2019-12\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,077,768.44\",\"iso_month\":\"2019-11\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,221,534.06\",\"iso_month\":\"2019-10\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,495,964.06\",\"iso_month\":\"2019-09\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,121,149.51\",\"iso_month\":\"2019-08\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,922,214.27\",\"iso_month\":\"2019-07\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,481,887.54\",\"iso_month\":\"2019-06\"}},{\"compare\":null,\"current\":{\"spend\":\"$3,699,436.51\",\"iso_month\":\"2019-05\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,610,082.12\",\"iso_month\":\"2019-04\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,292,529.94\",\"iso_month\":\"2019-03\"}},{\"compare\":null,\"current\":{\"spend\":\"$1,865,279.68\",\"iso_month\":\"2019-02\"}},{\"compare\":null,\"current\":{\"spend\":\"$2,350,773.89\",\"iso_month\":\"2019-01\"}}],\"totals\":{\"compare\":null,\"current\":{\"spend\":\"$29,788,312.97\"}}},\"metrics\":[{\"key\":\"spend\",\"label\":\"Media Spend\",\"format\":\"currency\",\"money\":true,\"neutral\":true,\"type\":\"volume\"}],\"query\":{\"currentDateRange\":{\"start\":\"2019-01-01\",\"end\":\"2020-03-31\"},\"compareDateRange\":null,\"sortBy\":{\"key\":\"iso_month\",\"order\":-1,\"type\":\"current\"},\"limit\":{\"count\":100,\"withRest\":true}},\"currency\":\"USD\",\"time_zone\":\"Singapore\"}"
+        }
+    ],
+    "ideal": "Here are the months in descending order of spend:
+
+    May 2019: $3,699,436.51
+    December 2019: $3,244,911.90
+    April 2019: $2,610,082.12
+    September 2019: $2,495,964.06
+    June 2019: $2,481,887.54
+    January 2019: $2,350,773.89
+    March 2019: $2,292,529.94
+    October 2019: $2,221,534.06
+    August 2019: $2,121,149.51
+    November 2019: $2,077,768.44
+    July 2019: $1,922,214.27
+    February 2019: $1,865,279.68
+    January 2020: $404,781.05"
+}
